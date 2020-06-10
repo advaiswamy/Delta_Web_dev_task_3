@@ -13,6 +13,7 @@
       <button class="btn" type="submit" name="logout">Logout</button>
     </form>
     <br>
+    <p>Your ID: <?php echo $_SESSION['id']?></p>
     <a href="subpages/create-event/create-event-form.php">Create Event</a>
     <br>
     <br>
