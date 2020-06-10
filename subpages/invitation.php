@@ -2,6 +2,8 @@
 echo "<link rel='stylesheet' href='styles.css'>";
 echo "<link rel='stylesheet' href='../styles/template.css'>";
 echo "<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap' rel='stylesheet'>";
+echo "<link href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap' rel='stylesheet'>";
+echo "<link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap' rel='stylesheet'>";
 session_start();
 if(isset($_SESSION['id'])){
   require "../dbc.php";
@@ -32,6 +34,7 @@ if(isset($_SESSION['id'])){
   echo "<p class='font'>".$row["footer"]."</p>";
   echo "</div>";
   echo "<img class='birthday-temp' id='birthday-temp' src='../images/birthday-template.jpg' alt='balloon template' style='display:none;'>";
+  echo "<img class='wedding-temp' id='wedding-temp' src='../images/wedding-template.jpg' alt='wedding template' style='display:none;'>";
   echo "</div>";
   $page = $_GET['subpage'];
   echo "<br><br><a href='".$page."'>Back</a>";

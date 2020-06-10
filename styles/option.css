@@ -14,5 +14,6 @@
   cursor: pointer;
   background: #f4f6ff;
   padding: 3px;
-  display: inline-block;
+  display: block;
+  margin-bottom: 10px;
 }

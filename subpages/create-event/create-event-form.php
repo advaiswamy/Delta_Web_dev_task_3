@@ -5,6 +5,8 @@
     <title></title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <form action="create-event.php" method="post">
@@ -27,7 +29,7 @@
       <select name="template" id="template">
         <option value="none">None</option>
         <option value="birthday">Birthday</option>
-        <!-- <option value="funeral">Funeral</option> -->
+        <option value="wedding">Wedding</option>
       </select>
       <br>
       <br>
@@ -35,6 +37,8 @@
       <select class="font" name="font" id="font">
         <option value="default">Default</option>
         <option value="Roboto">Roboto</option>
+        <option value="Ubuntu">Ubuntu</option>
+        <option value="Cursive">Dancing Script</option>
       </select>
       <br>
       <br>
@@ -43,7 +47,7 @@
       <input type="hidden" name="colors" id="colors" value="black" style="display:none;">
       <br>
       <br>
-      <div id="template-div" class="template-div inv">
+      <div id="template-div" class="template-div">
 
         <div class="subdiv">
 
@@ -51,12 +55,12 @@
           <input type="text" name="event" placeholder="Event Name" class="inv">
           <br>
           <br>
-          Event Date
+          <span class="inv">Event Date</span>
           <input class="inv" type="date" name="date_evt" min="<?php echo date('Y-m-d');?>" max="9999-12-31">
           <br>
           <br>
-          Start <input class="inv" type="time" name="start">
-          End <input class="inv" type="time" name="end">
+          <span class="inv">Start </span><input class="inv" type="time" name="start">
+          <span class="inv">End</span> <input class="inv" type="time" name="end">
           <br>
           <br>
           <input class="inv" type="text" name="header" placeholder="Header">

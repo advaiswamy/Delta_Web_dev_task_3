@@ -12,9 +12,8 @@ if (isset($_SESSION["id"])) {
         $result2 = mysqli_query($conn, $sql);
         $row2 = mysqli_fetch_assoc($result2);
 
-        echo "<div class='content' onclick='slide();'>";
+        echo "<div class='content'>";
         echo "<p>".$row2['evt_name']."</p>";
-        echo "</div>";
         echo "<div class='slider hide' id='slider'>";
         echo "<a href='../invitation.php?id=".$row['inv_id']."&subpage=invitations/option.php'>See invite</a><br><br>";
         echo "User_ID: ".$row['user_id'];
@@ -22,6 +21,7 @@ if (isset($_SESSION["id"])) {
         echo "<textarea name='response' rows='8' cols='30' placeholder='Food preferences/ Number of people' style='resize:none'></textarea><br><br>";
         echo "<button type='submit' name='accept'>Accept</button>&nbsp;";
         echo "<button type='submit' name='reject'>Reject</button>";
+        echo "</div>";
         echo "</div>";
     }
 

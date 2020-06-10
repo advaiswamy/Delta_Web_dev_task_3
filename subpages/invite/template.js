@@ -9,6 +9,11 @@ xhttp.onreadystatechange = function() {
     if (state.template == 'birthday') {
       document.getElementById('birthday-temp').style.display = "inline-block";
     }
+    if (state.template == 'wedding') {
+      document.getElementById('subdiv').style.padding = "300px 110px";
+      document.getElementById('wedding-temp').style.display = "inline-block";
+      document.getElementById('wedding-temp').style.width = "800px";
+    }
     if (state.font != "default"){
       document.querySelectorAll('.font').forEach(ele =>
         {

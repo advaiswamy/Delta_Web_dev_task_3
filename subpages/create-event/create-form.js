@@ -10,10 +10,18 @@ document.getElementById("evt_type").addEventListener("click", function() {
 });
 
 document.getElementById("template").addEventListener("click", function() {
-  if (document.getElementById("template").value == "birthday") {
+  if (document.getElementById("template").value == "birthday" && !(document.getElementById("template-div").classList.contains('birthday'))) {
     document.getElementById("template-div").classList.add('birthday');
-  } else {
+  } else if(document.getElementById("template").value != "birthday"){
     document.getElementById("template-div").classList.remove('birthday');
+  }
+});
+
+document.getElementById("template").addEventListener("click", function() {
+  if (document.getElementById("template").value == "wedding" && !(document.getElementById("template-div").classList.contains('birthday'))) {
+    document.getElementById("template-div").classList.add('wedding');
+  } else if(document.getElementById("template").value != "wedding"){
+    document.getElementById("template-div").classList.remove('wedding');
   }
 });
 
@@ -52,11 +60,17 @@ document.getElementById('font').addEventListener("click", function() {
   let element = document.querySelectorAll(".inv");
   if (document.getElementById('font').value != 'default') {
     element.forEach(ele => {
-      ele.classList.add('fonts');
+      // ele.className = "cleanstate";
+      ele.removeAttribute("class");
+      ele.classList.add('inv');
+      ele.classList.add(document.getElementById('font').value);
     });
   } else {
     element.forEach(ele => {
-      ele.classList.remove('fonts');
+      // ele.classList.remove('fonts');
+      // ele.className = "cleanstate";
+      ele.removeAttribute("class");
+      ele.classList.add('inv');
     });
   }
 })

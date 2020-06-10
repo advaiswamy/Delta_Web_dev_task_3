@@ -21,6 +21,15 @@ textarea{
 
 }
 
+.wedding{
+  background-color: white;
+  padding-top:210px;
+  padding-left:120px;
+  height:500px;
+  width: 800px;
+  background-image: url("../../images/wedding-template.jpg");
+
+}
 .blue{
   color: blue;
 }
@@ -31,6 +40,15 @@ textarea{
   position:relative;
 }
 
-.fonts{
+.Roboto{
   font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+.Ubuntu{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.Cursive{
+  font-family: 'Dancing Script', cursive;
 }
