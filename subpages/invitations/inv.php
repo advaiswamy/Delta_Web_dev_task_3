@@ -21,16 +21,17 @@ if (isset($_SESSION["id"])) {
         echo "User_ID: ".$row['user_id'];
         echo "<p>Response:</p>";
         echo "<textarea name='response' rows='8' cols='30' placeholder='Food preferences/ Number of people' style='resize:none'></textarea><br><br>";
-        echo "<button type='submit' name='accept'>Accept</button>&nbsp;";
-        echo "<button type='submit' name='reject'>Reject</button>";
+        echo "<button type='submit' name='accept' value='".$row['inv_id']."'>Accept</button>&nbsp;";
+        echo "<button type='submit' name='reject' value='".$row['inv_id']."'>Reject</button>";
         echo "</div>";
         echo "</div>";
     }
 
     if (isset($_POST['accept'])) {
         $user_id = (int)$_SESSION['id'];
+        $inv_id = (int)$_POST['accept'];
         $response = $_POST['response'];
-        $sql2 = "UPDATE inv_status SET response=?, approval='approved' WHERE end_user=$user_id";
+        $sql2 = "UPDATE inv_status SET response=?, approval='approved' WHERE end_user=$user_id AND inv_id=$inv_id";
         $stmt2 = mysqli_stmt_init($conn);
         mysqli_stmt_prepare($stmt2, $sql2);
         mysqli_stmt_bind_param($stmt2, "s", $response);
@@ -40,7 +41,8 @@ if (isset($_SESSION["id"])) {
     }
     if (isset($_POST['reject'])) {
         $user_id = (int)$_SESSION['id'];
-        $sql2 = "UPDATE inv_status SET response=?, approval='rejected' WHERE end_user=$user_id";
+        $inv_id = (int)$_POST['accept'];
+        $sql2 = "UPDATE inv_status SET response=?, approval='rejected' WHERE end_user=$user_id AND inv_id=$inv_id";
         mysqli_stmt_prepare($stmt2, $sql2);
         mysqli_stmt_bind_param($stmt2, "s", $response);
         mysqli_stmt_execute($stmt2);

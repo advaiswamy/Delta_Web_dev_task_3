@@ -1,3 +1,20 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+body{
+  font-family: sans-serif;
+}
+
 
 .field{
     font-size: 14px;
@@ -30,4 +47,35 @@
 .btn:hover{
   background-color: #303960;
   color: #FFFFFF;
+}
+
+.outline {
+  text-align:center;
+  width:200px;
+  display: table;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+
+.outline.red{
+    border: 2px solid red;
+    color: red;
+}
+
+.outline.red:hover{
+  background-color: red;
+  color: white;
+}
+
+.outline:hover{
+  background-color: #444444;
+  color: white;
 }

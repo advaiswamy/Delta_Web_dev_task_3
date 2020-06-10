@@ -1,4 +1,5 @@
 <?php
+  echo "<link rel='stylesheet' href='../../styles/main.css'>";
   session_start();
   if (isset($_SESSION["id"])) {
       require "../../dbc.php";

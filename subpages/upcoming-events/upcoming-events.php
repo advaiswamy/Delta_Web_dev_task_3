@@ -1,5 +1,6 @@
 <?php
   session_start();
+  echo "<link rel='stylesheet' href='../../styles/main.css'>";
   if (isset($_SESSION["id"])) {
       require "../../dbc.php";
       $sql = "SELECT inv_id FROM inv_status WHERE approval=\"approved\" AND end_user=?";
