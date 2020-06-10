@@ -1,0 +1,10 @@
+.invite{
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subdiv{
+  width:500px;
+  position:absolute;
+  padding: 85px 110px;
+}

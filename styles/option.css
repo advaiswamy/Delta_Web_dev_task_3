@@ -1,0 +1,18 @@
+.slider{
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  background: #eee;
+  transition: all 0.4s ease-in-out;
+}
+
+.hide {
+  height: 0;
+}
+
+.content{
+  cursor: pointer;
+  background: #f4f6ff;
+  padding: 3px;
+  display: inline-block;
+}

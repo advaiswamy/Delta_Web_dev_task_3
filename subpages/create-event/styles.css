@@ -1,0 +1,36 @@
+textarea{
+  resize: none;
+}
+
+.hide{
+  display:none;
+}
+
+.txt{
+  color: grey;
+  font-size: 15px;
+}
+
+.birthday{
+  background-color: white;
+  padding-top:80px;
+  padding-left:80px;
+  height:500px;
+  width: 800px;
+  background-image: url("../../images/birthday-template.jpg");
+
+}
+
+.blue{
+  color: blue;
+}
+
+.template-div{
+  background-size: contain;
+  background-repeat: no-repeat;
+  position:relative;
+}
+
+.fonts{
+  font-family: 'Roboto', sans-serif;
+}
