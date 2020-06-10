@@ -13,7 +13,7 @@ if (isset($_SESSION["id"])) {
         $row2 = mysqli_fetch_assoc($result2);
 
         echo "<div class='main-div'>";
-        echo "<div class='content'>";
+        echo "<div class='outline content'>";
         echo "<p>".$row2['evt_name']."</p>";
         echo "</div>";
         echo "<div class='slider hide' id='slider'>";
@@ -21,8 +21,8 @@ if (isset($_SESSION["id"])) {
         echo "User_ID: ".$row['user_id'];
         echo "<p>Response:</p>";
         echo "<textarea name='response' rows='8' cols='30' placeholder='Food preferences/ Number of people' style='resize:none'></textarea><br><br>";
-        echo "<button type='submit' name='accept' value='".$row['inv_id']."'>Accept</button>&nbsp;";
-        echo "<button type='submit' name='reject' value='".$row['inv_id']."'>Reject</button>";
+        echo "<button class='btn' type='submit' name='accept' value='".$row['inv_id']."'><b>Accept</b></button>&ensp;";
+        echo "<button class='btn' type='submit' name='reject' value='".$row['inv_id']."'><b>Reject</b></button>";
         echo "</div>";
         echo "</div>";
     }

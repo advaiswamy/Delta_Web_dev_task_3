@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
       <br>
       <br>
       Invite Status
-      <select name="type" id="evt_type">
+      <select class="option" name="type" id="evt_type">
         <option value="public">Public</option>
         <option value="private">Private</option>
       </select>
@@ -26,7 +27,7 @@
       <p class="pvt hide txt">(Enter user_id with commas Eg) 1,2,3)</p>
       <br class="pvt hide">
       Template
-      <select name="template" id="template">
+      <select class="option" name="template" id="template">
         <option value="none">None</option>
         <option value="birthday">Birthday</option>
         <option value="wedding">Wedding</option>
@@ -34,7 +35,7 @@
       <br>
       <br>
       Font
-      <select class="font" name="font" id="font">
+      <select class="option font" name="font" id="font">
         <option value="default">Default</option>
         <option value="Roboto">Roboto</option>
         <option value="Ubuntu">Ubuntu</option>
@@ -75,7 +76,7 @@
       </div>
       <br>
       <br>
-      <button type="submit" name="create">Create</button>
+      <button class="btn" type="submit" name="create">Create</button>
       <br>
       <br>
       <a href="../../main-page.php">Go back home</a>

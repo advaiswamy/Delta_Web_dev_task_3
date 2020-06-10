@@ -5,6 +5,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/option.css">
   </head>
   <body>

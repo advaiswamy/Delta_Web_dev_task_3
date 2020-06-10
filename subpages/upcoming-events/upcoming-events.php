@@ -13,18 +13,18 @@
       echo "<br>";
       echo "<table border='1'>";
       echo "<tr>
-      <td>
+      <th>
       User ID
-      </td>
-      <td>
+      </th>
+      <th>
       Event Name
-      </td>
-      <td>
+      </th>
+      <th>
       Start Time
-      </td>
-      <td>
+      </th>
+      <th>
       End Time
-      </td>
+      </th>
       </tr>";
       while ($row = mysqli_fetch_assoc($result)) {
           echo "<tr>";
