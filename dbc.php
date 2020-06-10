@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $dbUsername = "root";
-$dbPassword = "Qwerty!@#$%a18";
+$dbPassword = "pwd";
 $dbName = "invitations";
 
 $conn = mysqli_connect($servername, $dbUsername, $dbPassword, $dbName);
