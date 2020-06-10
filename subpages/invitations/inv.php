@@ -12,8 +12,10 @@ if (isset($_SESSION["id"])) {
         $result2 = mysqli_query($conn, $sql);
         $row2 = mysqli_fetch_assoc($result2);
 
+        echo "<div class='main-div'>";
         echo "<div class='content'>";
         echo "<p>".$row2['evt_name']."</p>";
+        echo "</div>";
         echo "<div class='slider hide' id='slider'>";
         echo "<a href='../invitation.php?id=".$row['inv_id']."&subpage=invitations/option.php'>See invite</a><br><br>";
         echo "User_ID: ".$row['user_id'];
